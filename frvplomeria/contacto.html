@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto – FRV Plomería</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="trabajos.html">Trabajos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h1>Solicita un servicio</h1>
+
+    <!-- 👉 Reemplaza TU-CODIGO-AQUI con el que te da Formspree -->
+    <form action="https://formspree.io/f/myzrpjra" method="POST" enctype="multipart/form-data">
+        
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Cédula:</label>
+        <input type="text" name="cedula" required>
+
+        <label>Dirección:</label>
+        <input type="text" name="direccion" required>
+
+        <label>Especificación del problema:</label>
+        <textarea name="problema" required></textarea>
+
+        <label>Subir foto del problema:</label>
+        <input type="file" name="foto">
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+
+</section>
+
+<footer>
+    © 2025 FRV Plomería
+</footer>
+
+</body>
+</html>
