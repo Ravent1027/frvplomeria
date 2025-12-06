@@ -1,1 +1,1 @@
-console.log("FRV Plomería Web Activa");
+console.log("FRV Plomería – Sitio cargado correctamente");

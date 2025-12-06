@@ -9,19 +9,18 @@
 <body>
 
 <header>
-    <img src="img/logo.png" class="logo">
+    <div class="logo-text">FRV Plomería</div>
     <nav>
         <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
         <a href="trabajos.html">Trabajos</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn-nav">Contacto</a>
     </nav>
 </header>
 
 <section class="contenido">
     <h1>Solicita un servicio</h1>
 
-    <!-- 👉 Reemplaza TU-CODIGO-AQUI con el que te da Formspree -->
     <form action="https://formspree.io/f/myzrpjra" method="POST" enctype="multipart/form-data">
         
         <label>Nombre completo:</label>
@@ -33,15 +32,14 @@
         <label>Dirección:</label>
         <input type="text" name="direccion" required>
 
-        <label>Especificación del problema:</label>
+        <label>Describe el problema:</label>
         <textarea name="problema" required></textarea>
 
-        <label>Subir foto del problema:</label>
+        <label>Foto del problema (opcional):</label>
         <input type="file" name="foto">
 
-        <button type="submit">Enviar solicitud</button>
+        <button type="submit" class="btn-form">Enviar Solicitud</button>
     </form>
-
 </section>
 
 <footer>

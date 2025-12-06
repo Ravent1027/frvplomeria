@@ -1,38 +1,99 @@
+/* ---- ESTILO GENERAL ---- */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
 }
 
+/* ---- HEADER ---- */
 header {
-    background: #004f9e;
-    padding: 15px;
-    color: white;
+    background: #111;
+    padding: 18px 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0057ff;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 nav a {
     margin: 0 12px;
-    color: white;
+    color: #cccccc;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #ffffff;
+}
+
+.btn-nav {
+    background: #0057ff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: white !important;
+}
+
+/* ---- HERO ---- */
 .hero {
     background: url("../img/bannerr.jpg") center/cover;
-    padding: 120px 20px;
+    padding: 150px 20px;
     text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.55);
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 42px;
+    margin: 0;
+}
+
+.hero p {
+    position: relative;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.btn-hero {
+    position: relative;
+    background: #0057ff;
+    padding: 12px 25px;
+    border-radius: 8px;
     color: white;
+    font-size: 17px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
 }
 
+.btn-hero:hover {
+    background: #003fcc;
+}
+
+/* ---- CONTENIDO ---- */
 .contenido {
-    padding: 30px;
+    padding: 40px 30px;
 }
 
+/* ---- FORM ---- */
 form {
-    background: white;
+    background: #111;
     padding: 20px;
     border-radius: 10px;
     width: 350px;
@@ -42,13 +103,63 @@ input, textarea {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 6px;
 }
 
-button {
-    background: #004f9e;
-    color: white;
+.btn-form {
+    background: #0057ff;
     padding: 12px;
     border: none;
     width: 100%;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
+}
+
+.btn-form:hover {
+    background: #003fcc;
+}
+
+/* ---- GALERÍA ---- */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ---- SERVICIOS ---- */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.servicio-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.servicio-card:hover {
+    border-color: #0057ff;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #111;
+    color: #777;
 }
