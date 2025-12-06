@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pCQ8wBdvGpg=",
+  "dgSpecHash": "lML4KaJ0c/c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ventu\\Desktop\\Poyect\\frv_api\\frv_api.csproj",
+  "projectFilePath": "C:\\Users\\ventu\\Desktop\\Poyect\\Poyect\\frv_api\\frv_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ventu\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ventu\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
