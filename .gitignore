@@ -1,31 +1,26 @@
-# Visual Studio
+# Visual Studio & configuraciones del entorno
 .vs/
 *.user
 *.suo
+.idea/
 
-# Build output
+# Archivos de compilación
 bin/
 obj/
 
-# Logs
+# Logs / temporales
 *.log
-
-# Temporary files
 *.tmp
 *.temp
 
-# Do NOT ignore the API's wwwroot folder (contains your frontend)
+# Carpetas o archivos no necesarios
+node_modules/
+dist/
+
+# ----------------------------------
+# 👉 Permitir wwwroot (frontend) en API
 !frv_api/wwwroot/
 !frv_api/wwwroot/**
 
-# JetBrains
-.idea/
-
-# Entity Framework
+# Ignorar migrations de EF
 Migrations/
-
-# Node
-node_modules/
-
-# Ignore typical frontend build output (optional)
-dist/
